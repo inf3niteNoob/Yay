@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yAy – Black & White Starter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="logo-area">
+          <img
+            src="assets/black logo.png"
+            alt="Logo"
+            class="logo"
+            data-light-src="assets/black logo.png"
+            data-dark-src="assets/white logo.png"
+          />
+        </div>
+        <nav class="main-nav">
+          <a href="#hero">Home</a>
+          <a href="#products">Devices</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle-btn"
+          type="button"
+          data-theme-toggle
+          aria-pressed="false"
+          aria-label="Toggle light/dark mode"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle-text">Light</span>
+        </button>
+      </header>
+
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero-text">
+            <h1>yAy – future-ready tech.</h1>
+            <p>
+              yAy is a tech company built around fast, beautiful hardware:
+              Hyper phones, Hyperbook laptops, Hyper Tab tablets, and Hyper Time smart watches.
+              Start here in clean black and white, then make it fully your own.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary" type="button" data-scroll-to="#products">
+                See devices
+              </button>
+              <button class="btn ghost" type="button" data-scroll-to="#contact">
+                Contact yAy
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="products" class="section products">
+          <h2>Devices</h2>
+          <p class="section-intro">
+            Explore the first generation of yAy hardware. All-black and white for now,
+            ready for the colors and stories you add later.
+          </p>
+          <div class="product-grid">
+            <article class="product-card" data-product-id="phone">
+              <img
+                src="assets/phone.png"
+                alt="yAy hyper 26 smartphone"
+                class="product-image"
+              />
+              <h3>yAy hyper 26</h3>
+              <p>The flagship phone built for speed, clarity, and all-day battery.</p>
+            </article>
+            <article class="product-card" data-product-id="laptop">
+              <img
+                src="assets/laptop.png"
+                alt="yAy hyperbook 26 laptop"
+                class="product-image"
+              />
+              <h3>yAy hyperbook 26</h3>
+              <p>A slim laptop that balances power, silence, and a sharp display.</p>
+            </article>
+            <article class="product-card" data-product-id="tablet">
+              <img
+                src="assets/tablet.png"
+                alt="yAy Hyper Tab 26 tablet"
+                class="product-image"
+              />
+              <h3>yAy Hyper Tab 26</h3>
+              <p>An ultra-thin tablet for sketching, streaming, and split-screen flows.</p>
+            </article>
+            <article class="product-card" data-product-id="watch">
+              <img
+                src="assets/smart watch.png"
+                alt="yAy hyper time 26 smart watch"
+                class="product-image"
+              />
+              <h3>yAy hyper time 26</h3>
+              <p>A minimal watch that tracks time, health, and notifications at a glance.</p>
+            </article>
+          </div>
+
+          <div class="product-detail" id="product-detail" aria-live="polite">
+            <h3 class="product-detail-title">Pick a yAy device.</h3>
+            <p class="product-detail-body">
+              Click any device card above to see its details highlighted here.
+            </p>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <h2>About</h2>
+          <p>
+            This is temporary placeholder content.
+            Swap it out with your own copy, images, or components when you are ready.
+          </p>
+        </section>
+
+        <section id="contact" class="section contact">
+          <h2>Contact</h2>
+          <form class="contact-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <small>&copy; <span id="year"></span> yAy. All rights reserved.</small>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
