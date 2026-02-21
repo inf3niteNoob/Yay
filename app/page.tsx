@@ -309,7 +309,7 @@ export default function HomePage() {
             What Our Customers Say
           </h2>
           <p className="text-muted-foreground text-center max-w-xl mx-auto mb-12">
-            Join thousands of satisfied customers who trust TechStore
+            Join thousands of satisfied customers who trust Store
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial) => (

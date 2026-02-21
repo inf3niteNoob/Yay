@@ -57,7 +57,7 @@ const team = [
 ];
 
 const milestones = [
-  { year: "2020", title: "Founded", description: "TechStore started with a simple mission" },
+  { year: "2020", title: "Founded", description: "Yay started with a simple mission" },
   { year: "2021", title: "First 1,000 Customers", description: "Reached our first major milestone" },
   { year: "2022", title: "Expanded Product Line", description: "Added smart home and accessories" },
   { year: "2023", title: "International Shipping", description: "Now shipping to 20+ countries" },
@@ -83,7 +83,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              About <span className="text-accent">TechStore</span>
+              About <span className="text-accent">Yay</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               We&apos;re on a mission to bring the best technology to everyone. 
@@ -131,7 +131,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl sm:text-4xl font-bold">Our Story</h2>
               <p className="text-muted-foreground text-lg">
-                TechStore began in 2020 with a simple idea: technology should be accessible, 
+                Yay began in 2020 with a simple idea: technology should be accessible, 
                 understandable, and enjoyable for everyone. What started as a small online 
                 shop has grown into a trusted destination for tech enthusiasts worldwide.
               </p>
@@ -311,7 +311,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-white/80 text-lg mb-8">
                 Be part of our growing family of tech enthusiasts. 
-                Start shopping today and experience the TechStore difference.
+                Start shopping today and experience the Yay difference.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -321,7 +321,7 @@ export default function AboutPage() {
                   Start Shopping
                 </a>
                 <a
-                  href="mailto:contact@techstore.com"
+                  href="mailto:contact@yaystore.com"
                   className="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-colors cursor-pointer"
                 >
                   Contact Us

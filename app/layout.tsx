@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TechStore - Premium Electronics",
-  description: "Discover the latest laptops, phones, tablets, and smart watches at TechStore. Premium electronics for modern life.",
+  title: "Store - Premium Electronics",
+  description: "Discover the latest laptops, phones, tablets, and smart watches at Store. Premium electronics for modern life.",
   icons: {
     icon: "/images/favicon.ico",
   },

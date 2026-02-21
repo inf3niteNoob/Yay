@@ -2,11 +2,17 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
 export function Footer() {
-  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <footer className="bg-card border-t border-border">
@@ -16,14 +22,18 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative w-8 h-8">
-                <Image
-                  src={theme === "dark" ? "/images/logo-light.png" : "/images/logo-dark.png"}
-                  alt="TechStore"
-                  fill
-                  className="object-contain"
-                />
+                {mounted ? (
+                  <Image
+                    src={resolvedTheme === "dark" ? "/images/newlogofordarktheme.png" : "/images/newlogoforlighttheme.png"}
+                    alt="Store"
+                    fill
+                    className="object-contain"
+                  />
+                ) : (
+                  <div className="w-8 h-8 bg-muted rounded-lg" />
+                )}
               </div>
-              <span className="text-xl font-bold">TechStore</span>
+              <span className="text-xl font-bold">Store</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Premium electronics for modern life. Discover the latest laptops, phones, tablets, and smart watches.
@@ -115,7 +125,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} TechStore. All rights reserved.
+            © {new Date().getFullYear()} Store. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
